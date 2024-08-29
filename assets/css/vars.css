@@ -1,0 +1,10 @@
+:root{
+    --black: 0,0,0;
+    --grey: #F0F2F5;
+    --grey-border: #d8d8d8;
+    --primary: #0d6efd;
+    --pink: #dc3545;
+    --shadow: 0 .5rem 1rem rgba(var(--black), .15);
+    --shadow-sm: 0 .125rem .25rem rgba(var(--black), .075);
+    --shadow-md: 0 1rem 3rem rgba(var(--black), .175);
+}

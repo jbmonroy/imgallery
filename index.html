@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/breakpoints.css">
+    <script src="assets/js/env.js"></script>
+    <script src="assets/js/unsplash-service.js"></script>
+    <script src="assets/js/card.js"></script>
+    <script src="assets/js/search-input.js"></script>
+    <script src="assets/js/image-modal.js"></script>
+    <script src="assets/js/main.js"></script>
+    <title>IMGallery</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header tabindex="0">
+            <h1><i class="uil uil-camera-plus"></i>IMGallery</h1>
+            <nav id="menu">
+                <a tabindex="0" href="?filter=naturaleza">Naturaleza</a>
+                <a tabindex="0" href="?filter=chill">Chill</a>
+                <a tabindex="0" href="?filter=gaming">Gaming</a>
+                <a tabindex="0" href="?filter=ux/ui">UX/UI</a>
+            </nav>
+        </header>
+        <main>
+            <input tabindex="0" id="searchInput" type="text" class="search-input" placeholder="Buscar Imágenes" aria-label="Buscador">
+            <div class="container" id="container"></div>
+        </main>
+        <footer>
+            <p class="info">Prueba técnica - Aplica jbmonroy</p>
+        </footer>
+    </div>
+</body>
+</html>

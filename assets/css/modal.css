@@ -1,0 +1,136 @@
+.modal-container {
+    background-color: rgba(var(--black), .9);
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    animation: fadeInFull .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    max-height: 90%;
+    max-width: 1000px;
+    border: var(--grey-border);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.modal .close {
+    position: absolute;
+    right: .5rem;
+    top: .6rem;
+    background: none;
+    padding: .5rem;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+    z-index: 12;
+}
+
+.modal>.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.content-wrapper>img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.content-wrapper>.user-info {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 12;
+    background-color: rgba(var(--black), .15);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    transition: all .3s;
+    animation: fadeInDown .3s;
+}
+
+.content-wrapper>.user-info:hover {
+    background-color: rgba(var(--black), .3);
+}
+
+.user-info>.thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--primary);
+    margin-right: .5rem;
+}
+
+.thumb>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-info>a {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .3s;
+    letter-spacing: 1px;
+}
+
+.modal-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(var(--black), .7);
+    color: #fff;
+}
+
+.modal-info>.other {
+    display: flex;
+    align-items: center;
+}
+
+.other .likes-counter {
+    font-size: 1rem;
+    margin-left: .2rem;
+    font-weight: 600;
+    transition: all .3s;
+    cursor: default;
+    margin-bottom: .3rem;
+    opacity: .8;
+}
+
+.other .likes-counter:hover {
+    color: var(--pink);
+}
+
+.date {
+    font-size: .8rem;
+    opacity: .4;
+    margin-bottom: .3rem;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description {
+    margin-right: 1rem;
+    margin-bottom: .5rem;
+    opacity: .7;
+}

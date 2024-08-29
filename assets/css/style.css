@@ -1,0 +1,85 @@
+
+@import url(./animations.css);
+@import url(./vars.css);
+@import url(./card.css);
+@import url(./search-input.css);
+@import url(./modal.css);
+@import url(https://unicons.iconscout.com/release/v4.0.8/css/line.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: var(--grey);
+}
+.wrapper{
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+header {
+    color: rgba(var(--black),.7);
+    width: 100%;
+    min-height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    box-shadow: var(--shadow);
+    position: sticky;
+    z-index: 10;
+    animation: fadeInDown .8s;
+}
+
+nav a {
+    display: inline-block;
+    padding: .5rem;
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--color-font);
+    font-weight: bold;
+    transition: all .3s;
+}
+
+nav a:hover {
+    opacity: .7;
+    transform: scale(1.1);
+    border-bottom: 1px solid;
+}
+
+main  {
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    min-height: 1000px;
+}
+
+.notFound {
+    display: block;
+    height: fit-content;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
